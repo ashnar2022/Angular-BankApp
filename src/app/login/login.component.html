@@ -7,15 +7,21 @@
         <div class="card-body text-center">
           <h5 class="card-title mt-2">My Bank</h5>
           <h6>{{Aim}}</h6>
+          <p>{{head}}</p>
         </div>
         <form action="">
           
-          <input (change)="acnoChange($event)" type="text" id="accno" [placeholder]="Account" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;">
-          <input  (change)="pswdChange($event)" type="text" id="pswd" placeholder="Password" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;">
+          <!-- <input (change)="acnoChange($event)" type="text" id="accno" [placeholder]="Account" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;"> -->
+          <!-- <input #acno type="text" id="accno" [placeholder]="Account" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;"> -->
+          <input [(ngModel)]="acno" type="text" id="accno" [placeholder]="Account" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;" name="acno">
+                                                                  
+          <!-- <input  (change)="pswdChange($event)" type="text" id="pswd" [placeholder]="Password" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;"> -->
+          <!-- <input  #pswd type="text" id="pswd" [placeholder]="Password" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;"> -->
+          <input  [(ngModel)]="pswd" type="text" id="pswd" [placeholder]="Password" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;" name="pswd">
           <button id="login"   (click)="log()" type="button"  class="rounded-pill bg-primary " style="width:250px; border-color:rgb(101, 152, 247); margin-left:47px">Login</button>
         </form>
         <div class="card-body  text-center">
-     <a href="./signup.html" style="text-align: center;">Sign up</a>
+     <a routerLink="register" style="text-align: center;">Sign up</a>
           
         </div>
       </div>
@@ -24,5 +30,5 @@
     <div class="col-4"></div>
     
         </div>
-        <app-register></app-register>
+        <!-- <app-register></app-register> -->
         

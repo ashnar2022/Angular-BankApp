@@ -8,15 +8,15 @@
          <h5 class="card-title mt-2" style="text-align:center">My Bank</h5>
         </div>
         <form action="">
-          <input type="text" id="acco" placeholder="Account Number" class="form-control rounded-pill m-4 bg-light" style="width:300px;  box-shadow: 5px 10px 8px #888888;">
-          <input type="text" id="uname" placeholder="User Name" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;">
-          <input type="text" id="pswd" placeholder="Password" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;">
+          <input [(ngModel)]="acno"  name="acno" type="text" id="acco" placeholder="Account Number" class="form-control rounded-pill m-4 bg-light" style="width:300px;  box-shadow: 5px 10px 8px #888888;">
+          <input  [(ngModel)]="uname" name="uname" type="text" id="uname" placeholder="User Name" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;">
+          <input [(ngModel)]="pswd" name="pswd" type="text" id="pswd" placeholder="Password" class="form-control rounded-pill m-4 bg-light" style="width:300px;box-shadow: 5px 10px 8px #888888;">
     
      
-        <button type="button" onclick="reg()" class="rounded-pill bg-primary m-3" style="width:250px; border-color:rgb(101, 152, 247); margin-left:47px"  >register</button>
+        <button type="button" (click)="register()" class="rounded-pill bg-primary " style="width:250px; border-color:rgb(101, 152, 247); margin-left:46px"  >register</button>
       </form>
         <div class="card-body">
-         <a href="./index.html" class="card-link" id="signup" style="text-align: center;margin-left:122px">Signin</a>
+         <a routerLink="" class="card-link" id="signup" style="text-align:center;margin-left:146px">Signin</a>
           
         </div>
       </div>

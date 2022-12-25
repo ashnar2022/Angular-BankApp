@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+#class1{
+    margin-left:298px;
+    margin-top: 69px;
+}
+#class2{
+    margin-left:129px;
+    margin-top: 69px;
+    margin-right: 189px;
+}

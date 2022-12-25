@@ -32,4 +32,35 @@
         b)View to component
                  b.1)Event binding -(event_name)="function name"
                  b.2)Event binding using $event -(event_name)="function name($event)"
-                 
+                 b.3)Event binding using template referencing variable - #variable_name
+    1.2) Two way binding
+    Data share in both directions(ts->html & html->ts)
+
+    ngModel (library)   -import from FormsModule
+    import ngModel from FormsModule
+
+    2) Angular routing
+            {
+               path:'',component:LoginComponent 
+               //'-4200 login
+            },
+          {
+               path:'dashboard',component:DashboardComponent 
+               //'-4200/dashboard-register
+           },
+          {
+                 path:'register',component:RegisterComponent
+          }
+    - Use router outlet selector inside the root component
+
+
+
+
+    3)Dependency injection
+
+    To share data between two components
+    -here we use constructor to achieve this concept
+    eg: login to dashboard
+
+    4)Angular services
+    To hold the redundant data (duplicate data)
